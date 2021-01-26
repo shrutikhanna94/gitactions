@@ -9,6 +9,8 @@ jobs:
     steps:
       - name: echo a string
         run: echo "Hello"
+        continue-on-error: true
+        timeout-minutes: 1
       - name: multiline script
         run: |
           node -v
